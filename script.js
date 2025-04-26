@@ -12,7 +12,7 @@ button.addEventListener('click', async () => {
   loading.style.display = 'flex'; // Show loading animation
   loadingtext.style.display = 'block'; // Show loading text
   try {
-    const response = await fetch('http://localhost:3000/capture-screenshot');
+    const response = await fetch('https://infographicbackend32.vercel.app');
     if (!response.ok) {
       Status = "failed"
       loading.style.display = 'none'; // Hide loading animation
