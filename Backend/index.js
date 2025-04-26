@@ -18,7 +18,7 @@ app.get('/capture-screenshot', async (req, res) => {
     const browser = await puppeteer.launch({ headless: "new" });
     const page = await browser.newPage();
 
-    await page.goto('https://infographic32.vercel.app', {
+    await page.goto('https://infographic32.vercel.app/', {
       waitUntil: 'domcontentloaded',
       timeout: 3000
     });
