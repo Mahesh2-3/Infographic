@@ -30,4 +30,6 @@ app.get('/capture-screenshot', async (req, res) => {
 });
 
 // IMPORTANT: instead of app.listen(), export the app
-module.exports = app;
+app.listen(3000, () => {
+  console.log('Server is running on port 3000');
+} );
