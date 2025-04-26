@@ -40,7 +40,7 @@ app.get('/capture-screenshot', async (req, res) => {
 
     // WARNING: localhost (127.0.0.1:5500) will not work on Vercel!
     // Change the URL to a PUBLICLY ACCESSIBLE URL
-    await page.goto('http://127.0.0.1:5500', {
+    await page.goto('https://infographic32.vercel.app/', {
       waitUntil: 'networkidle0',
       timeout: 30000,
     });
