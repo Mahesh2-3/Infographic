@@ -8,6 +8,11 @@ app.use((req, res, next) => {
   next();
 });
 
+app.get('/', (req, res) => {
+  res.send('Hello World!');
+})
+
+
 app.get('/capture-screenshot', async (req, res) => {
   try {
     const browser = await puppeteer.launch({ headless: "new" });
